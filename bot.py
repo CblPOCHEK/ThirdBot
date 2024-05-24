@@ -5,7 +5,7 @@ API_TOKEN = '6866744247:AAH7pTTKqL9z5MS4JcaOmMkUauyQ94IW1U8'
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
-@dp.message_handLer(commands='start')
+@dp.message_handler(commands='start')
 async def start(message: types.Message) :
   await message.reply('Привет, я нейроконсультант который поможет подготовиться тебе к собеседованию. Напиши название компании должность которую ты претендуешь')
 
